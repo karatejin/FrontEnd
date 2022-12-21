@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 내부 스티일시트-->
+    <style>
+        *{ /*전체선택자 상속받은 순위가 제일 낮음*/
+            color: orange;
+        }
+
+        #container{ /*그다음으로 낮은*/
+            color: brown;
+        }
+
+        .p-text {
+            color: green;  /*클래스가 우선순위다.*/
+        }
+
+        #container p{ /*조합을 하면 우선순위 번호가 있다. 합쳐지면 우선순위가 높아짐*/
+            /*color: blue !important;  /*!important 가 오면 무조건 반영된다*/
+            color: blue; /*container 바깥 p 는 안먹힘*/
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 style="color: red; font-size: 80px;">제목</h1> <!-- 인라인 -->
+        <p class="p-text">우선순위 테스트1</p>
+        <p class="p-text">우선순위 테스트1</p>
+        <b>우선순위 테스트2</b> <!-- container 의 요소로 적용 우선순위가 제일 낮은 container 한테는 높으나 
+            상속받은 class 보다는 낮은 원래 p 는 brown이다. id 를 상속받았다고 해서 자식보다 높은게 아니다. -->
+    </div>
+    
+</body>
+</html>
