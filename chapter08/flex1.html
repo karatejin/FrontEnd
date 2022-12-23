@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display: flex; /*기본적으로 오른쪽 방향으로 간다.*/
+            flex-direction: row; /*주축이 바뀐다.*/
+            align-content: space-between+;
+            flex-wrap: wrap; /*wrap 을 해야 적정한 때에 내려간다.*/
+            width: 350px; /*이 flex-container 안에 box 가 들어있다.*/ /*명확하게 잡아줘야 내려간다.*/
+            
+            height: 700px;
+        }
+        .box{
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        
+        
+    </div>
+</body>
+</html>

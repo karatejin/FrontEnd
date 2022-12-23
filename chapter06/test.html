@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-container{
+            position: relative;
+            margin: 100px auto;            
+            border: 1px solid black;
+            width: 498px;
+            height: 498px;
+        }
+
+        .box1{
+            position: absolute; /*상위요소 static 제외한 나머지*/
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1px solid black;
+            width: 98px;
+            height: 98px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>
