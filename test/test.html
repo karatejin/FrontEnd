@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/test.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <title>Document</title>
+     
+</head>
+<body>
+    <header class="header-bar">
+        <div class="container">
+            <a href="#" class="barbrand">Oven<small class="logo-b">beta</small></a>
+            <ul class="right-bar">
+                <li class="dropdown">
+                    <a href="#" type="button">
+                        <img class="profile" src="/images/profile.png" alt="">
+                        <span class="name">jingu</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div id="dashboard" class="d-container">
+        <div class="p-header">
+            <h1 class="p-left">프로젝트 대시보드</h1>
+            <div class="p-right">
+                <div class="form-inline">
+                    <input type="text" class="form-c" placeholder="프로젝트 검색">
+                    <span class="glyphicon glyphicon-search"></span>
+                </div>
+                <div class="btn-gruop" data-togle="buttons">
+                    <label class="btn-defualt1">
+                        <input type="radio" name="view_type" value="media">
+                        <span class="glyphicon glyphicon-list"></span>
+                    </label>
+                    <label class="btn-defalt2">
+                        <input type="radio" name="view_type" value="card">
+                        <span class="glyphicon glyphicon-th-large"></span>
+                    </label>                    
+                </div>
+            </div>        
+        </div>
+        <div id="project" class="container">
+            <div class="left-itm">
+                <ul class="nav1">
+                    <li class="na1">
+                        <a id="loadMyProject" href="#" data-togle="tab">나의 프로젝트</a>
+                    </li>
+                    <li class="na2">
+                        <a id="loadSharedProject" href="#" data-togle="tab">나에게 공유된 프로젝트</a>
+                    </li>
+                </ul>
+                <br>
+            </div>
+            <div class="main-itm">
+                <div class="itm-header">
+                    <div class="p-header1">
+                        <button type="button" class="select_all">모두선택</button>                        
+                    </div>
+                    <div class="p-header2">
+                        <button type="button" class="new-project"><span class="glyphicon glyphicon-plus-sign">새로운 프로젝트 만들기</span></button>
+                    </div>                      
+                </div>
+                <br>
+                <div class="project-list" style="height: 444px;">
+                    <div class="project-list-group">
+                        <div class="pro-itm">
+                            <div class="thumbnail">
+                                <div class="marker">
+                                    <input type="checkbox" class="c-left">
+                                </div>
+                                <div class="pro-con">
+                                    <button type="button" class="btn-c">
+                                        <span class="glyphicon glyphicon-cog"></span>
+                                        <span class="caret"></span>
+                                    </button>
+                                </div>
+                                <a href="#" class="project-link" target="_blank">
+                                    <img src="../images/thumb.png" alt="">
+                                </a>
+                                <div class="caption">
+                                    <h3>
+                                        <a href="#" class="c-t" target="blank">test1</a>
+                                    </h3>
+                                    <p>test1</p>
+                                    <hr>
+                                    <div class="thumb-f">
+                                        <small style="margin: 0px 0px 5px ;">
+                                            <span class="glyphicon glyphicon-time"></span>
+                                            <strong>하루 전</strong>
+                                        </small>
+                                        <br>
+                                        <small>
+                                            <a href="#" class="f-info">로그인없이 테스트 가능</a>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-itm">
+                            <div class="thumbnail">
+                                <div class="marker">
+                                    <input type="checkbox" class="c-left">
+                                </div>
+                                <div class="pro-con">
+                                    <button type="button" class="btn-c">
+                                        <span class="glyphicon glyphicon-cog"></span>
+                                        <span class="caret"></span>
+                                    </button>
+                                </div>
+                                <a href="#" class="project-link" target="_blank">
+                                    <img src="../images/thumb.png" alt="">
+                                </a>
+                                <div class="caption">
+                                    <h3>
+                                        <a href="#" class="c-t" target="blank">test</a>
+                                    </h3>
+                                    <p>test</p>
+                                    <hr>
+                                    <div class="thumb-f">
+                                        <small style="margin: 0px 0px 5px ;">
+                                            <span class="glyphicon glyphicon-time"></span>
+                                            <strong>하루 전</strong>
+                                        </small>
+                                        <br>
+                                        <small>
+                                            <a href="#" class="f-info">로그인없이 테스트 가능</a>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last-container">
+            <footer>
+                <hr>
+                <address>
+                    <div class="left-f">
+                        Oven <a href="#">
+                            서비스 이용약관 및 운영원칙
+                            </a>
+                            <a href="#"><strong>개인정보처리방침</strong></a>
+                    </div>
+                    <div class="right-f">
+                        <small>ⓒ 2015-2016 Kakao Corp.</small>
+                    </div>
+                </address>
+            </footer>
+        </div>
+        
+    </div>
+</body>
+</html>
