@@ -1,7 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
-    
+    padding: 0;    
 }
 
 ul,
@@ -19,4 +18,14 @@ a {
 address{
     font-style: normal;
 }
+
+input[type="radio"]{
+    display: none;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked{
+    background-color: antiquewhite;
+}
+
 
