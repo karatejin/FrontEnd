@@ -358,10 +358,8 @@ header {
 
 
 footer{
-    
     border-top: 1px solid #ccc ;
     justify-content: center;
-    display: flex;
     height: 61px;
 }
 
